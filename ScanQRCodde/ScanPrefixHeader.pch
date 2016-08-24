@@ -1,0 +1,51 @@
+//
+//  ScanPrefixHeader.pch
+//  ScanQRCodde
+//
+//  Created by KangMei_Mac on 16/8/19.
+//  Copyright © 2016年 AronAbnerL. All rights reserved.
+//
+
+#ifndef ScanPrefixHeader_pch
+#define ScanPrefixHeader_pch
+#import <Availability.h>
+
+#if __IPHONE_OS_VERSION_MIN_REQUIRED
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iPhone SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Masonry.h"
+#import "MBProgressHUD.h"
+//#import "GlobelHead.h"
+//#import <SystemConfiguration/SystemConfiguration.h>
+//#import <MobileCoreServices/MobileCoreServices.h>
+//#import "AFNetworking.h"
+#endif
+#else
+#ifdef __OBJC__
+//#import <Cocoa/Cocoa.h>
+//#import <SystemConfiguration/SystemConfiguration.h>
+//#import <AssertMacros.h>
+//#import <CoreServices/CoreServices.h>
+#endif
+#endif
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ScanPrefixHeader_pch */
